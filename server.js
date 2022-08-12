@@ -1,7 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv").config();
 const cors = require("cors");
-const port = process.env.PORT || 5500;
+const port = 5555;
 const errorHandler = require("./middleware/errorMiddleware");
 const connectDB = require("./config/db");
 
@@ -16,4 +16,4 @@ app.use("/api/v1/docs", require("./routes/docsRoutes"));
 // app.use("api/v1/users", require("./routes/users"));
 
 app.use(errorHandler);
-app.listen(port, () => console.log(`Server running on port ${port}`));
+app.listen(port, () => console.log(`Server running on port ${port} 😎`));
